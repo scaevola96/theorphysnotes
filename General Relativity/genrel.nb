@@ -1,0 +1,124 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3558,        114]
+NotebookOptionsPosition[      2825,         93]
+NotebookOutlinePosition[      3170,        108]
+CellTagsIndexPosition[      3127,        105]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"<<", "VariationalMethods`"}]], "Input",
+ CellChangeTimes->{{3.776937337918747*^9, 3.7769373764181347`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"418d5afc-ccc5-4cbf-a7a8-854bcc8fff85"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VariationalD", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"y", "[", "x", "]"}], " ", 
+    SqrtBox[
+     RowBox[{"1", "+", 
+      SuperscriptBox[
+       RowBox[{
+        SuperscriptBox["y", "\[Prime]",
+         MultilineFunction->None], "[", "x", "]"}], "2"]}]]}], ",", 
+   RowBox[{"y", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"46218cda-8e91-4a5e-9920-a88f727fbcc4"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"1", "+", 
+   SuperscriptBox[
+    RowBox[{
+     SuperscriptBox["y", "\[Prime]",
+      MultilineFunction->None], "[", "x", "]"}], "2"], "-", 
+   RowBox[{
+    RowBox[{"y", "[", "x", "]"}], " ", 
+    RowBox[{
+     SuperscriptBox["y", "\[Prime]\[Prime]",
+      MultilineFunction->None], "[", "x", "]"}]}]}], 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     SuperscriptBox[
+      RowBox[{
+       SuperscriptBox["y", "\[Prime]",
+        MultilineFunction->None], "[", "x", "]"}], "2"]}], ")"}], 
+   RowBox[{"3", "/", "2"}]]]], "Output",
+ CellChangeTimes->{3.776937394258049*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"c04b5ef4-94a5-4b3d-a4b4-5a08b409e861"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VariationalD", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"y", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7769374083416147`*^9, 3.776937424494006*^9}, {
+  3.77693747481055*^9, 3.776937489629161*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"e695808a-8265-4470-aeb9-6e3df95185c3"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["y", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "x", "]"}], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      SuperscriptBox[
+       RowBox[{
+        SuperscriptBox["y", "\[Prime]",
+         MultilineFunction->None], "[", "x", "]"}], "2"]}], ")"}], 
+    RowBox[{"3", "/", "2"}]]]}]], "Output",
+ CellChangeTimes->{3.776937490486958*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"2f15aaf0-d317-4552-b9d8-338190e418b0"]
+}, Open  ]]
+},
+WindowSize->{759, 697},
+WindowMargins->{{Automatic, 134}, {-117, Automatic}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 209, 3, 28, "Input",ExpressionUUID->"418d5afc-ccc5-4cbf-a7a8-854bcc8fff85"],
+Cell[CellGroupData[{
+Cell[792, 27, 431, 12, 44, "Input",ExpressionUUID->"46218cda-8e91-4a5e-9920-a88f727fbcc4"],
+Cell[1226, 41, 703, 21, 56, "Output",ExpressionUUID->"c04b5ef4-94a5-4b3d-a4b4-5a08b409e861"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1966, 67, 321, 6, 28, "Input",ExpressionUUID->"e695808a-8265-4470-aeb9-6e3df95185c3"],
+Cell[2290, 75, 519, 15, 87, "Output",ExpressionUUID->"2f15aaf0-d317-4552-b9d8-338190e418b0"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.24)  16 AUG 2019 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.24)  8 SEP 2019 16:54
 entering extended mode
 **./genrel.tex
 (genrel.tex
@@ -941,8 +941,6 @@ Package: amsthm 2017/10/31 v2.20.4
 (C:\Users\serge\AppData\Roaming\MiKTeX\2.9\tex/latex/was\icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
-\c@lemma=\count305
-
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\euscript.sty"
 Package: euscript 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
@@ -975,124 +973,53 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 (C:\Users\serge\AppData\Roaming\MiKTeX\2.9\tex/latex/wrapfig\wrapfig.sty
 \wrapoverhang=\dimen168
 \WF@size=\dimen169
-\c@WF@wrappedlines=\count306
+\c@WF@wrappedlines=\count305
 \WF@box=\box48
 \WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen170
-\ar@mcellbox=\box49
-\extrarowheight=\dimen171
-\NC@list=\toks34
-\extratabsurround=\skip69
-\backup@length=\skip70
-\ar@cellbox=\box50
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\tabularx.sty"
-Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
-\TX@col@width=\dimen172
-\TX@old@table=\dimen173
-\TX@old@col=\dimen174
-\TX@target=\dimen175
-\TX@delta=\dimen176
-\TX@cols=\count307
-\TX@ftn=\toks35
-)
-(C:\Users\serge\AppData\Roaming\MiKTeX\2.9\tex/latex/tabulary\tabulary.sty
-Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
-\TY@count=\count308
-\TY@linewidth=\dimen177
-\tymin=\dimen178
-\tymax=\dimen179
-\TY@tablewidth=\dimen180
-)
-(C:\Users\serge\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen181
-\lightrulewidth=\dimen182
-\cmidrulewidth=\dimen183
-\belowrulesep=\dimen184
-\belowbottomsep=\dimen185
-\aboverulesep=\dimen186
-\abovetopsep=\dimen187
-\cmidrulesep=\dimen188
-\cmidrulekern=\dimen189
-\defaultaddspace=\dimen190
-\@cmidla=\count309
-\@cmidlb=\count310
-\@aboverulesep=\dimen191
-\@belowrulesep=\dimen192
-\@thisruleclass=\count311
-\@lastruleclass=\count312
-\@thisrulewidth=\dimen193
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\longtable.sty"
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
-\LTleft=\skip71
-\LTright=\skip72
-\LTpre=\skip73
-\LTpost=\skip74
-\LTchunksize=\count313
-\LTcapwidth=\dimen194
-\LT@head=\box51
-\LT@firsthead=\box52
-\LT@foot=\box53
-\LT@lastfoot=\box54
-\LT@cols=\count314
-\LT@rows=\count315
-\c@LT@tables=\count316
-\c@LT@chunks=\count317
-\LT@p@ftn=\toks36
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip75
-\multirow@cntb=\count318
-\multirow@dima=\skip76
-\bigstrutjot=\dimen195
-) (genrel.aux)
+\c@problem=\count306
+
+(genrel.aux)
 \openout1 = `genrel.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 72.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    ... okay on input line 51.
 \symgns@font=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 72.
-Package gensymb Info: Math companion symbols declared on input line 72.
-LaTeX Info: Redefining \degree on input line 72.
-LaTeX Info: Redefining \celsius on input line 72.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 51.
+Package gensymb Info: Math companion symbols declared on input line 51.
+LaTeX Info: Redefining \degree on input line 51.
+LaTeX Info: Redefining \celsius on input line 51.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 72.
-LaTeX Info: Redefining \ohm on input line 72.
-Package gensymb Info: Using \textohm for \ohm on input line 72.
-Package gensymb Info: Using \textmu for \micro on input line 72.
-\AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 72.
+erthousand on input line 51.
+LaTeX Info: Redefining \ohm on input line 51.
+Package gensymb Info: Using \textohm for \ohm on input line 51.
+Package gensymb Info: Using \textmu for \micro on input line 51.
+\AtBeginShipoutBox=\box49
+Package hyperref Info: Link coloring OFF on input line 51.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1100,11 +1027,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count319
+\c@section@level=\count307
 )
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
 
 (genrel.out) (genrel.out)
 \@outlinefile=\write3
@@ -1147,17 +1074,17 @@ LaTeX Info: Redefining \nameref on input line 72.
 
 (C:\Users\serge\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen196
-\scratchbox=\box56
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen197
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count308
+\scratchdimen=\dimen170
+\scratchbox=\box50
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen171
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks35
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1171,17 +1098,17 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 75.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 75.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 54.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1189,34 +1116,45 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 LaTeX Warning: No \author given.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
-[1
+(seminar1.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+ [1
 
 {C:/Users/serge/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
-
-(genrel.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
+ (genrel.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `genrel.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
+(rerunfilecheck)             Checksum: 5931EE326CC20E1F61969500C36A7020;113.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 24202 strings out of 492895
- 394194 string characters out of 3133479
- 470512 words of memory out of 3000000
- 27860 multiletter control sequences out of 15000+200000
- 539162 words of font info for 45 fonts, out of 3000000 for 9000
+ 23972 strings out of 492895
+ 391293 string characters out of 3133479
+ 467873 words of memory out of 3000000
+ 27592 multiletter control sequences out of 15000+200000
+ 552125 words of font info for 84 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,6n,68p,1041b,355s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,13n,68p,1041b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 rm1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
-pi600\larm1440.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
-lh-t2a/dpi600\larm2074.pk>
-Output written on genrel.pdf (1 page, 17063 bytes).
+pi600\lati1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
+lh-t2a/dpi600\labx1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\serge\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm2074.pk><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+ib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib
+8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on genrel.pdf (1 page, 127089 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

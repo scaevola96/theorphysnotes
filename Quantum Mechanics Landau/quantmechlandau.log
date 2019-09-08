@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.24)  8 SEP 2019 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.24)  8 SEP 2019 15:56
 entering extended mode
 **./quantmechlandau.tex
 (quantmechlandau.tex
@@ -1130,13 +1130,41 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 LaTeX Warning: No \author given.
 
-(seminar1.tex)
+(seminar1.tex
+
+! LaTeX Error: Environment problem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \begin{problem}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{problem}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \end{problem}
+                 	
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
  [1
 
 {C:/Users/serge/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
- (quantmechlandau.aux)
+
+(quantmechlandau.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `quantmechlandau.out' has not changed.
@@ -1144,30 +1172,30 @@ Package rerunfilecheck Info: File `quantmechlandau.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 23944 strings out of 492895
- 391137 string characters out of 3133479
- 467957 words of memory out of 3000000
- 27582 multiletter control sequences out of 15000+200000
- 550079 words of font info for 74 fonts, out of 3000000 for 9000
+ 23971 strings out of 492895
+ 391456 string characters out of 3133479
+ 464957 words of memory out of 3000000
+ 27593 multiletter control sequences out of 15000+200000
+ 552125 words of font info for 84 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,10n,68p,1050b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,7n,68p,1050b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-rm1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
-pi600\lati0800.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
-lh-t2a/dpi600\lati1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fon
-ts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\serge\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\serge\AppData\Loca
-l\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm2074.pk><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on quantmechlandau.pdf (1 page, 105887 bytes).
+ti1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
+pi600\labx1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
+lh-t2a/dpi600\larm1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\serge\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm2074.pk><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+ib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on quantmechlandau.pdf (1 page, 106365 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
