@@ -1,0 +1,24 @@
+Найти неопределённый интеграл
+\begin{equation}
+		\int \frac{1}{x^8+x^4+1}\mathrm{d}x
+\end{equation}
+
+Для начала разобьём на множители. Легко заметить, что 
+\[ x^8+x^4+1=\left(x^4+x^2+1\right)\left(x^4-x^2+1\right)
+\]
+
+\[
+\int \frac{1}{x^8+x^4+1}\mathrm{d}x = \frac{1}{2}\int \frac{1}{x^4+x^2+1} +\frac{1}{2}\int \frac{1}{x^4-x^2+1}
+\]
+Первое слагаемое в правой части уже нами найдено ранее.
+\[	\int \frac{d x}{x^{4}+x^{2}+1}=\frac{1}{4} \ln \frac{x^{2}+x+1}{x^{2}-x+1}+\frac{1}{2 \sqrt{3}} \operatorname{arctg} \frac{x^{2}-1}{x \sqrt{3}}	
+\]
+
+Найдём теперь второе слагаемое
+\[
+\begin{aligned}
+\int \frac{1}{x^4-x^2+1}\mathrm{d}x=\int \frac{\frac{1}{2}\left(x^{2}+1\right)-\frac{1}{2}\left(x^{2}-1\right)}{x^4-x^2+1}\mathrm{d}x=\\=\frac{1}{2}\int \frac{x^2+1}{x^4-x^2+1}\mathrm{d}x - \frac{1}{2}\int \frac{x^2-1}{x^4-x^2+1}\mathrm{d}x=\frac{1}{2}\int \frac{1+\frac{1}{x^2}}{x^2+\frac{1}{x^2}-1}\mathrm{d}x-\frac{1}{2}\int \frac{1-\frac{1}{x^2}}{x^2+\frac{1}{x^2}-1}\mathrm{d}x=\\\frac{1}{2}\int \frac{1+\frac{1}{x^2}}{x^2+\frac{1}{x^2}-1}\mathrm{d}x-\frac{1}{2}\int \frac{1-\frac{1}{x^2}}{x^2+\frac{1}{x^2}-1}\mathrm{d}x\\=\frac{1}{2}\int \frac{1}{x^2+\frac{1}{x^2}-1}\mathrm{d}\left(x-\frac{1}{x}\right)-\frac{1}{2}\int \frac{1}{x^2+\frac{1}{x^2}-1}\mathrm{d}\left(x+\frac{1}{x}\right)=\left|	x+\frac{1}{x}=u \quad \text{и} \quad x-\frac{1}{x}=v\right|=\\\frac{1}{2}\int \frac{1}{v^2+2-1}\mathrm{d}v-\frac{1}{2}\int \frac{1}{u^2-2-1}\mathrm{d}u
+\end{aligned}
+\]
+
+Посчитав эти табличные интегралы, сделав обратную подстановку и собрав все слагаемые получим значение исходного интеграла.

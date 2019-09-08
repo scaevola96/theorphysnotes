@@ -1,0 +1,29 @@
+\section{Семинар 1}
+\begin{exercise}
+	Покажите, что унитарные матрицы, как и эрмитовы, диагонализуемы. Указание: покажите, что эрмитова и анти-эрмитова
+	часть унитарного оператора диагонализуемы совместно
+\end{exercise}	
+
+\begin{solution}
+	$$
+	U^{\dagger} U=U U^{\dagger}=I
+	$$
+	
+	Матрица $A$ диагонализируема если
+	$$
+	\exists P: \hspace*{5pt} P^{-1} A P=\left(\begin{array}{cccc}{\lambda_{1}} \\ {} & {\lambda_{2}} \\ {} & {} & {\ddots} \\ {} & {} & {} & {\lambda_{n}}\end{array}\right)
+	$$
+	
+	$$
+	U = A + B = \underbrace{\frac{U + U^{\dagger}}{2}}_{\text{эрмитова}} \hspace{5pt} +\underbrace{\frac{U - U^{\dagger}}{2}}_{\text{антиэрмитова }}
+	$$
+	
+	Две матрицы $A \text{ и } B$ совместно диагонализируемы $\leftrightarrow$ $\commutator{A}{B} = 0 $
+	
+	$$
+	\begin{array}{cccc}
+		\commutator{A}{B}=\frac{1}{4}\left(\left(U + U^{\dagger}\right)\left(U - U^{\dagger}\right) + \left(U - U^{\dagger}\right)\left(U + U^{\dagger}\right)\right)\\
+		=\frac{1}{4}\left(U U + U^{\dagger} U - U U^{\dagger} - U^{\dagger} U^{\dagger}\right) - \frac{1}{4}\left(U U - U^{\dagger} U + U U^{\dagger} - U^{\dagger} U^{\dagger}\right) = 0
+	\end{array}
+	$$
+\end{solution}		
