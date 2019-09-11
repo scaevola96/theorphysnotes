@@ -57,7 +57,7 @@ $$
 
 
 \begin{problem}
-	Выведите уравнение $ m \frac{d u^{\mu}}{d s} = e F_{\mu \nu}$
+	Выведите уравнение $ m \frac{d u_{\mu}}{d s} = e F_{\mu \nu} u^\nu$
 	
 \end{problem}	
 
@@ -87,11 +87,11 @@ $$
 	$$
 	
 	$$
-	\frac{\partial L }{\partial x^{\mu}} = - e \partial_{\mu} A_{\nu}  \left[x(t)\right] \dot{x}^{\mu}
+	\frac{\partial L }{\partial x^{\mu}} = - e \partial_{\mu} A_{\nu}  \left[x(t)\right] \dot{x}^{\nu}
 	$$
 	
 	$$
-	m\frac{d u_{\mu}}{d s} = e \underbrace{\left(\partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}\right)}_{F_{\mu \nu}} = e F_{\mu \nu}
+	m\frac{d u_{\mu}}{d s} = e \underbrace{\left(\partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}\right)}_{F_{\mu \nu}} = e F_{\mu \nu} u^{\nu}
 	$$
 	
 	\begin{problem}
@@ -141,6 +141,10 @@ $$
 	
 	$$
 	H= \sqrt{m^2 + \left(\boldsymbol{p}_H - e \boldsymbol{A}\right)^2} + e \varphi
+	$$
+	
+	$$
+	\dot{p}_i = - e \left( \partial_i \phi - \partial_0 A_i \right) - \frac{m \partial_i m}{\sqrt{m^2 + \left(\boldsymbol{p}_H - e \boldsymbol{A}\right)^2}} + v_k e \frac{A_k}{x_k}
 	$$
 	
 	
