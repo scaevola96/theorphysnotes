@@ -5,6 +5,11 @@
 \usepackage[utf8]{inputenc}			% кодировка исходного текста
 \usepackage[english,russian]{babel}	% локализация и переносы
 %%
+
+\usepackage[normalem]{ulem}
+\newcommand{\stkout}[1]{\ifmmode\text{\sout{\ensuremath{#1}}}\else\sout{#1}\fi}
+
+%
 \usepackage{cmap} 
 \usepackage{ gensymb }
 \usepackage[unicode]{hyperref}

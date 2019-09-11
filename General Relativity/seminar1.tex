@@ -50,14 +50,126 @@ $$
 	$$
 	
 \end{solution}
+\begin{problem}
+	content...
+\end{problem}
 
 
 
+\begin{problem}
+	Выведите уравнение $ m \frac{d u^{\mu}}{d s} = e F_{\mu \nu}$
+	
+\end{problem}	
 
 
+\begin{solution}
+	$$
+	S = \int_{t_1}^{t_2}dt  L 
+	$$
+	
+	
+	$$
+	S = -m \int d t \sqrt{\dot{x}_{\mu} \dot{x}^{\mu}} - e A_{\mu} \dot{x}^{\mu} dt
+	$$
+	
+
+	$$
+	\frac{d}{d t}\frac{\partial L}{\partial \dot{x}^{\mu}} - \frac{\partial L }{\partial x^{\mu}} = 0 
+	$$
+
+	$$
+	\frac{\partial L}{\partial \dot{x}_{\mu}}= \left(-m \frac{\dot{x}_{\mu}}{\sqrt{\dot{x}_{\sigma} \dot{x}^{\sigma}}} - e A_{\mu}\left[x(t)\right]\right)
+	$$
+
+	
+	$$
+	\frac{d}{d t}\left(-m \frac{\dot{x}_{\mu}}{\sqrt{\dot{x}_{\mu} \dot{x}^{\mu}}} - e A_{\mu}\left[x(t)\right]\right) = -m \frac{d u}{d t} - e \partial_{\nu} A_{\mu}\dot{x}^{\nu}
+	$$
+	
+	$$
+	\frac{\partial L }{\partial x^{\mu}} = - e \partial_{\mu} A_{\nu}  \left[x(t)\right] \dot{x}^{\mu}
+	$$
+	
+	$$
+	m\frac{d u_{\mu}}{d s} = e \underbrace{\left(\partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}\right)}_{F_{\mu \nu}} = e F_{\mu \nu}
+	$$
+	
+	\begin{problem}
+		Рассмотрите частицу во внешнем скалярном поле, которое описывается зависящей от точки
+		массой $(x)$ в действии $S\left[x\right] = \int^{B}_{A} \left(- m ds -e A\right)$. Напишите гамильтониан и уравнения движения такой частицы. Покажите, что если $m(x) = m_0+U(x), U(x)\ll m_{0}$, то в нерелятивистском пределе эти уравнения описывают
+		частицу во внешнем потенциальном поле $U(x)$
+	\end{problem}
+	
+	\begin{solution}
+	$$
+	S = \int^{B}_{A} -m(x)ds -e A = \int^{t_B}_{t_A} dt \left(- m \sqrt{1 - v^2} + e\boldsymbol{A}\boldsymbol{v} - e \varphi \right)
+	$$
+	
+	$$
+	\boldsymbol{p}_{H} = \frac{\partial L}{\partial \boldsymbol{v}} = \frac{m \boldsymbol{v}}{\sqrt{1-v^2}} + e \boldsymbol{A} = \boldsymbol{p} + e\boldsymbol{A}
+	$$
+	
+	$$
+	\frac{m \boldsymbol{v}}{\sqrt{1-v^2}}= \boldsymbol{p}_H-e\boldsymbol{A}
+	$$
+	
+	$$
+	\frac{m^2 v^2}{1-v^2}= \left(\boldsymbol{p}_H-e\boldsymbol{A}\right)^2
+	$$
+	
+	$$
+	m^2 v^2 =  \left(\boldsymbol{p}_H-e\boldsymbol{A}\right)^2 \left(1-v^2\right)
+	$$
+	
+	$$
+	v^2 = \frac{\left(\boldsymbol{p}_H-e\boldsymbol{A}\right)^2 }{\left(m^2 + \left(\boldsymbol{p}_H-e\boldsymbol{A}\right)^2\right)}
+	$$
+	
+	$$
+	v = \frac{\left(\boldsymbol{p}_H-e\boldsymbol{A}\right)}{\sqrt{\left(m^2 + \left(\boldsymbol{p}_H-e\boldsymbol{A}\right)^2\right)}}
+	$$
+	
+	
+	
+	$$	
+	1- v^2 = \frac{m^2}{m^2 + \left(\boldsymbol{p}_H-e\boldsymbol{A}\right)^2}
+	$$
+	
+	$$
+	H = \boldsymbol{v}\boldsymbol{p}_H - L = \frac{\boldsymbol{p}^2_H - 2 \boldsymbol{p}_H \boldsymbol{A} + m^2  + e^2 A^2 }{\sqrt{\left(m^2 + \left(\boldsymbol{p}_H-e\boldsymbol{A}\right)^2\right)}} + e \varphi
+	$$
+	
+	$$
+	H= \sqrt{m^2 + \left(\boldsymbol{p}_H - e \boldsymbol{A}\right)^2} + e \varphi
+	$$
+	
+	
+	$$
+	m = m_0 + U , U \ll m_0
+	$$
+	
+	
+	$$
+	v \ll 1 ,  \boldsymbol{p}_H  - e \boldsymbol{A} = \frac{ m \boldsymbol{v}}{\sqrt{1-v^2}}\approx m_0 \boldsymbol{v}
+	$$
+	
+	
+	$$
+	\frac{m}{\sqrt{m^2 - \left(\boldsymbol{p}_H - e\boldsymbol{A}\right)^2}}\approx \frac{m_{0}^2}{\sqrt{m_{0}^2\left(1-v^2\right)}}\approx 1
+	$$
+	
+	
+	$$
+	p_i = m v_i
+	$$
+	
+	$$
+	\dot{p}_i = - e \left(\partial_i \varphi  - \partial_0 A_i\right) - \frac{\stkout{m_0} \partial_i U}{\stkout{m_0}} + v_k e \frac{A_k}{x_k}
+	$$
+	\end{solution}
 
 
-
+\end{solution}
 
 
 
