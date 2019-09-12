@@ -27,3 +27,60 @@
 	\end{array}
 	$$
 \end{solution}	
+
+\begin{exercise}
+	В квантовой механике замена базиса реализуется унитарными преобразованиями $\ket{\psi'} = \hat{U}\ket{\psi}$
+
+	\begin{enumerate}
+		\item
+		Покажите, что гамильтониан при этом заменяется на $\hat{H'}$ = $\hat{U}$$\hat{H}$$\hat{U}^\dagger$
+		\item 
+		Последнее утверждение необходимо модифицировать, если унитарное преобразование зависит явно от времени $\hat{U}=\hat{U}(t)$. Покажите, что в таком случае гамильтониан необходимо заменить на $\hat{H'} = \hat{U}\hat{H}\hat{U}^\dagger  - i\hat{U} \partial_t \hat{U}^\dagger$
+	\end{enumerate}
+
+	\begin{solution}
+		\begin{enumerate}
+			\item
+		
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t} \ket{\psi} = \hat{H} \ket{\psi}
+		$$
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t} \hat{U}^\dagger \ket{\psi'} = \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		i \hbar \hspace{1pt} \hat{U} \hat{U}^\dagger \frac{\partial }{\partial t}  \ket{\psi'} = \hat{U} \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t}  \ket{\psi'} = \hat{U} \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		\hat{H'} = \hat{U} \hat{H} \hat{U}^\dagger
+		$$
+		\item 
+		
+		Если же $\hat{U}=\hat{U}(t)$
+		
+		$$
+		i \hbar \frac{\partial}{\partial t} \hat{U}^\dagger(t) \ket{\psi'} =i\hbar\left(\hat{U}^\dagger \partial_t \ket{\psi'} + \partial_t \hat{U}^\dagger \ket{\psi'}\right)
+		$$
+		
+		$$
+		i \hbar \hspace{1pt}  \hat{U} \frac{\partial}{\partial t} \hat{U}^\dagger(t) \ket{\psi'} =i\hbar\left(\hat{U}\hat{U}^\dagger \partial_t \ket{\psi'} + \hat{U} \partial_t \hat{U}^\dagger \ket{\psi'}\right)
+		$$
+		
+		$$
+		i \hbar \frac{\partial}{\partial t} \ket{\psi'} = \left(\hat{U}\hat{H}\hat{U}^\dagger  - i \hbar\hat{U} \partial_t \hat{U}^\dagger\right) \ket{\psi'}
+		$$
+		
+		$$\hat{H'} = \hat{U}\hat{H}\hat{U}^\dagger  - i \hbar \hat{U} \partial_t \hat{U}^\dagger$$
+		
+			
+		\end{enumerate}
+	\end{solution}
+	.
+	
+\end{exercise}
