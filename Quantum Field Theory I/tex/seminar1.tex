@@ -1,0 +1,86 @@
+\section{Семинар 1}
+\begin{exercise}
+	Покажите, что унитарные матрицы, как и эрмитовы, диагонализуемы. Указание: покажите, что эрмитова и анти-эрмитова
+	часть унитарного оператора диагонализуемы совместно
+\end{exercise}	
+
+\begin{solution}
+	$$
+	U^{\dagger} U=U U^{\dagger}=I
+	$$
+	
+	Матрица $A$ диагонализируема если
+	$$
+	\exists P: \hspace*{5pt} P^{-1} A P=\left(\begin{array}{cccc}{\lambda_{1}} \\ {} & {\lambda_{2}} \\ {} & {} & {\ddots} \\ {} & {} & {} & {\lambda_{n}}\end{array}\right)
+	$$
+	
+	$$
+	U = A + B = \underbrace{\frac{U + U^{\dagger}}{2}}_{\text{эрмитова}} \hspace{5pt} +\underbrace{\frac{U - U^{\dagger}}{2}}_{\text{антиэрмитова }}
+	$$
+	
+	Две матрицы $A \text{ и } B$ совместно диагонализируемы $\leftrightarrow$ $\commutator{A}{B} = 0 $
+	
+	$$
+	\begin{array}{cccc}
+	\commutator{A}{B}=\frac{1}{4}\left(\left(U + U^{\dagger}\right)\left(U - U^{\dagger}\right) + \left(U - U^{\dagger}\right)\left(U + U^{\dagger}\right)\right)\\
+	=\frac{1}{4}\left(U U + U^{\dagger} U - U U^{\dagger} - U^{\dagger} U^{\dagger}\right) - \frac{1}{4}\left(U U - U^{\dagger} U + U U^{\dagger} - U^{\dagger} U^{\dagger}\right) = 0
+	\end{array}
+	$$
+\end{solution}	
+
+\begin{exercise}
+	В квантовой механике замена базиса реализуется унитарными преобразованиями $\ket{\psi'} = \hat{U}\ket{\psi}$
+
+	\begin{enumerate}
+		\item
+		Покажите, что гамильтониан при этом заменяется на $\hat{H'}$ = $\hat{U}$$\hat{H}$$\hat{U}^\dagger$
+		\item 
+		Последнее утверждение необходимо модифицировать, если унитарное преобразование зависит явно от времени $\hat{U}=\hat{U}(t)$. Покажите, что в таком случае гамильтониан необходимо заменить на $\hat{H'} = \hat{U}\hat{H}\hat{U}^\dagger  - i\hat{U} \partial_t \hat{U}^\dagger$
+	\end{enumerate}
+
+	\begin{solution}
+		\begin{enumerate}
+			\item
+		
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t} \ket{\psi} = \hat{H} \ket{\psi}
+		$$
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t} \hat{U}^\dagger \ket{\psi'} = \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		i \hbar \hspace{1pt} \hat{U} \hat{U}^\dagger \frac{\partial }{\partial t}  \ket{\psi'} = \hat{U} \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t}  \ket{\psi'} = \hat{U} \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		\hat{H'} = \hat{U} \hat{H} \hat{U}^\dagger
+		$$
+		\item 
+		
+		Если же $\hat{U}=\hat{U}(t)$
+		
+		$$
+		i \hbar \frac{\partial}{\partial t} \hat{U}^\dagger(t) \ket{\psi'} =i\hbar\left(\hat{U}^\dagger \partial_t \ket{\psi'} + \partial_t \hat{U}^\dagger \ket{\psi'}\right)
+		$$
+		
+		$$
+		i \hbar \hspace{1pt}  \hat{U} \frac{\partial}{\partial t} \hat{U}^\dagger(t) \ket{\psi'} =i\hbar\left(\hat{U}\hat{U}^\dagger \partial_t \ket{\psi'} + \hat{U} \partial_t \hat{U}^\dagger \ket{\psi'}\right)
+		$$
+		
+		$$
+		i \hbar \frac{\partial}{\partial t} \ket{\psi'} = \left(\hat{U}\hat{H}\hat{U}^\dagger  - i \hbar\hat{U} \partial_t \hat{U}^\dagger\right) \ket{\psi'}
+		$$
+		
+		$$\hat{H'} = \hat{U}\hat{H}\hat{U}^\dagger  - i \hbar \hat{U} \partial_t \hat{U}^\dagger$$
+		
+			
+		\end{enumerate}
+	\end{solution}
+	.
+	
+\end{exercise}
