@@ -1,0 +1,198 @@
+\section{Семинар 1}
+\begin{exercise}
+	Покажите, что унитарные матрицы, как и эрмитовы, диагонализуемы. Указание: покажите, что эрмитова и анти-эрмитова
+	часть унитарного оператора диагонализуемы совместно
+\end{exercise}	
+
+\begin{solution}
+	$$
+	U^{\dagger} U=U U^{\dagger}=I
+	$$
+	
+	Матрица $A$ диагонализируема если
+	$$
+	\exists P: \hspace*{5pt} P^{-1} A P=\left(\begin{array}{cccc}{\lambda_{1}} \\ {} & {\lambda_{2}} \\ {} & {} & {\ddots} \\ {} & {} & {} & {\lambda_{n}}\end{array}\right)
+	$$
+	
+	$$
+	U = A + B = \underbrace{\frac{U + U^{\dagger}}{2}}_{\text{эрмитова}} \hspace{5pt} +\underbrace{\frac{U - U^{\dagger}}{2}}_{\text{антиэрмитова }}
+	$$
+	
+	Две матрицы $A \text{ и } B$ совместно диагонализируемы $\leftrightarrow$ $\commutator{A}{B} = 0 $
+	
+	$$
+	\begin{array}{cccc}
+	\commutator{A}{B}=\frac{1}{4}\left(\left(U + U^{\dagger}\right)\left(U - U^{\dagger}\right) + \left(U - U^{\dagger}\right)\left(U + U^{\dagger}\right)\right)\\
+	=\frac{1}{4}\left(U U + U^{\dagger} U - U U^{\dagger} - U^{\dagger} U^{\dagger}\right) - \frac{1}{4}\left(U U - U^{\dagger} U + U U^{\dagger} - U^{\dagger} U^{\dagger}\right) = 0
+	\end{array}
+	$$
+\end{solution}	
+
+\begin{exercise}
+	В квантовой механике замена базиса реализуется унитарными преобразованиями $\ket{\psi'} = \hat{U}\ket{\psi}$
+
+	\begin{enumerate}
+		\item
+		Покажите, что гамильтониан при этом заменяется на $\hat{H'}$ = $\hat{U}$$\hat{H}$$\hat{U}^\dagger$
+		\item 
+		Последнее утверждение необходимо модифицировать, если унитарное преобразование зависит явно от времени $\hat{U}=\hat{U}(t)$. Покажите, что в таком случае гамильтониан необходимо заменить на $\hat{H'} = \hat{U}\hat{H}\hat{U}^\dagger  - i\hat{U} \partial_t \hat{U}^\dagger$
+	\end{enumerate}
+
+	\begin{solution}
+		\begin{enumerate}
+			\item
+		
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t} \ket{\psi} = \hat{H} \ket{\psi}
+		$$
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t} \hat{U}^\dagger \ket{\psi'} = \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		i \hbar \hspace{1pt} \hat{U} \hat{U}^\dagger \frac{\partial }{\partial t}  \ket{\psi'} = \hat{U} \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		i \hbar \hspace{1pt} \frac{\partial }{\partial t}  \ket{\psi'} = \hat{U} \hat{H} \hat{U}^\dagger \ket{\psi'}
+		$$
+		
+		$$
+		\hat{H'} = \hat{U} \hat{H} \hat{U}^\dagger
+		$$
+		\item 
+		
+		Если же $\hat{U}=\hat{U}(t)$
+		
+		$$
+		i \hbar \frac{\partial}{\partial t} \hat{U}^\dagger(t) \ket{\psi'} =i\hbar\left(\hat{U}^\dagger \partial_t \ket{\psi'} + \partial_t \hat{U}^\dagger \ket{\psi'}\right)
+		$$
+		
+		$$
+		i \hbar \hspace{1pt}  \hat{U} \frac{\partial}{\partial t} \hat{U}^\dagger(t) \ket{\psi'} =i\hbar\left(\hat{U}\hat{U}^\dagger \partial_t \ket{\psi'} + \hat{U} \partial_t \hat{U}^\dagger \ket{\psi'}\right)
+		$$
+		
+		$$
+		i \hbar \frac{\partial}{\partial t} \ket{\psi'} = \left(\hat{U}\hat{H}\hat{U}^\dagger  - i \hbar\hat{U} \partial_t \hat{U}^\dagger\right) \ket{\psi'}
+		$$
+		
+		$$\hat{H'} = \hat{U}\hat{H}\hat{U}^\dagger  - i \hbar \hat{U} \partial_t \hat{U}^\dagger$$
+		
+			
+	\end{enumerate}
+\end{solution}
+\end{exercise}
+
+
+\begin{exercise}
+Покажите следующие свойства матриц Паули (по повторяющимся индексам подразумевается суммирование):
+ 	\begin{enumerate}
+		\item 
+		Они, совместно с единичной матрицей $\sigma^{0}=\hat{\mathbb{I}}_{2 \times 2}$, представляют собой базис в пространстве эрмитовых матриц $2 \times 2$.
+		\item 
+		Они удовлетворяют следующими правилами перемножения: $$\hat{\sigma}^{\alpha} \hat{\sigma}^{\beta}=\delta_{\alpha \beta} \hat{\mathbb{I}}+i \epsilon_{\alpha \beta \gamma} \hat{\sigma}^{\gamma} \left( \alpha, \beta, \gamma \in\{x, y, z\}, \epsilon_{\alpha \beta \gamma}  -\text{символ Леви-Чевиты }\right)$$
+		\item 
+		Они удобно экспоненциируются: $\exp \left(i a n_{\alpha} \hat{\sigma}^{\alpha}\right)=\cos a+i n_{\alpha} \hat{\sigma}^{\alpha} \sin a$ (тут $ \boldsymbol{n} $ — произвольный единичный вектор). Указание: разложите экспоненту в ряд; из-за простого правила произведения матриц Паули, произвольные степени от
+		их линейных комбинаций вычисляются достаточно просто
+	\end{enumerate}
+	
+\end{exercise}
+
+
+\begin{solution}
+	\begin{enumerate}
+	\item 
+	$M \in M_{2}(\mathbb{C})$
+	$M=\left(\begin{array}{ll}{z_{11}} & {z_{12}} \\ {z_{21}} & {z_{22}}\end{array}\right)$, где $z_{i j} \in \mathbb{C}$
+	
+	$$
+	\sigma_{0}=\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right), \sigma_{1}=\left(\begin{array}{cc}{0} & {1} \\ {1} & {0}\end{array}\right), \sigma_{2}=\left(\begin{array}{cc}{0} & {-i} \\ {i} & {0}\end{array}\right), \sigma_{3}=\left(\begin{array}{cc}{1} & {0} \\ {0} & {-1}\end{array}\right)
+	$$
+	
+	$$
+	c_{\mu} \in \mathbb{C}
+	$$
+	Докажем линейную независимость
+	$$
+	c_{0} \sigma_{0}+c_{1} \sigma_{1}+c_{2} \sigma_{2}+c_{3} \sigma_{3}=\mathbf{o}
+	$$
+	
+	$$
+	\left(\begin{array}{cc}{c_{0}+c_{3}} & {c_{1}-i c_{2}} \\ {c_{1}+i c_{2}} & {c_{0}-c_{3}}\end{array}\right)=\left(\begin{array}{ll}{0} & {0} \\ {0} & {0}\end{array}\right)
+	$$
+	Это система имеет имеет только тривиальное решение
+	$$
+	c_{0}=c_{1}=c_{1}=c_{3}=0
+	$$
+	
+	Теперь покажем что они покрывают всё пространство $	M_{2}(\mathbb{C}) $
+	
+	$$
+	M=c_{0} I+c_{1} \sigma_{1}+c_{2} \sigma_{2}+c_{3} \sigma_{3}
+	$$
+	
+	$$
+	\left(\begin{array}{cc}{c_{0}+c_{3}} & {c_{1}-i c_{2}} \\ {c_{1}+i c_{2}} & {c_{0}-c_{3}}\end{array}\right)=\left(\begin{array}{cc}{z_{11}} & {z_{12}} \\ {z_{21}} & {z_{22}}\end{array}\right)
+	$$
+	
+	$$
+	c_{0}+c_{3}=z_{11}, c_{0}-c_{3}=z_{22}, c_{1}-i c_{2}=z_{12}, c_{1}+i c_{2}=z_{21}
+	$$
+	
+	$$
+	c_{0}=\frac{1}{2}\left(z_{11}+z_{22}\right), c_{1}=\frac{1}{2}\left(z_{12}+z_{21}\right), c_{2}=\frac{1}{2} i\left(z_{12}-z_{21}\right), c_{3}=\frac{1}{2}\left(z_{11}-z_{22}\right)
+	$$
+	
+	
+	\item 
+	Проверим
+	$$
+	\sigma_{x} \sigma_{x}=\left(\begin{array}{ll}{0} & {1} \\ {1} & {0}\end{array}\right)\left(\begin{array}{ll}{0} & {1} \\ {1} & {0}\end{array}\right)=\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right)=\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right) \delta_{11}+i \varepsilon_{11\gamma} \hat{\sigma}^{\gamma}
+	$$
+	
+	$$
+	\sigma_{x} \sigma_{y}=\left(\begin{array}{ll}{0} & {1} \\ {1} & {0}\end{array}\right)\left(\begin{array}{ll}{0} & {-i} \\ {i} & {0}\end{array}\right)=\left(\begin{array}{ll}{i} & {0} \\ {0} & {-i}\end{array}\right)=\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right) \delta_{12}+i \varepsilon_{123} \hat{\sigma}_{3}
+	$$
+	
+	$$
+	\sigma_{y} \sigma_{z}=\left(\begin{array}{ll}{0} & {-i} \\ {i} & {0}\end{array}\right)\left(\begin{array}{ll}{1} & { 0} \\ {0} & {-1}\end{array}\right)=\left(\begin{array}{ll}{0} & {i} \\ {i} & {0}\end{array}\right)=\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right) \delta_{23}+i \varepsilon_{231} \hat{\sigma}_{1}
+	$$
+	
+	$$
+	\sigma_{z} \sigma_{x}=\left(\begin{array}{ll}{1} & {0} \\ {0} & {-1}\end{array}\right)\left(\begin{array}{ll}{0} & {1} \\ {1} & {0}\end{array}\right)=\left(\begin{array}{ll}{0} & {1} \\ {-1} & {0}\end{array}\right)=\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right) \delta_{32}+i \varepsilon_{312} \hat{\sigma}_{2}
+	$$
+	
+	
+
+\item 
+
+$$
+(\vec{a} \vec{\sigma})(\vec{b} \vec{\sigma})=a_{i} b_{k} \sigma_{i} \sigma_{k}=a_{i} b_{k}\left(\delta_{i k}+i e_{i k l} \sigma_{l}\right)=(\vec{a} \vec{b})+i[\vec{a} \times \vec{b}] \vec{\sigma}
+$$
+
+$$
+(\vec{a} \vec{\sigma})(\vec{a} \vec{\sigma})=\vec{a} \vec{a}=|\vec{a}|^{2}
+$$
+
+$$
+e^{X}=\sum_{k=0}^{\infty} \frac{1}{k !} X^{k}
+$$
+
+$$
+\begin{array}{l}{(\vec{\sigma} \vec{n})^{2}=1} \\ {(\vec{\sigma} \vec{n})^{3}=(\vec{\sigma} \vec{n})^{2}(\vec{\sigma} \vec{n})=(\vec{\sigma} \vec{n})} \\ {(\vec{\sigma} \vec{n})^{4}=(\vec{\sigma} \vec{n})^{2}(\vec{\sigma} \vec{n})^{2}=1}\end{array}
+$$
+
+$$
+\left\{1+\frac{1}{2 !}\left(a\right)^{2}+\frac{1}{4 !}\left(a\right)^{4}-\ldots\right\}+i(\vec{\sigma} \vec{n})\left\{a-\frac{1}{3 !}\left(a\right)^{3}+\frac{1}{5 !}\left(a\right)^{5}-\ldots\right\}
+$$
+
+$$
+\exp \left(i a n_{\alpha} \hat{\sigma}^{\alpha}\right)=\cos a+i n_{\alpha} \hat{\sigma}^{\alpha} \sin a
+$$
+
+\end{enumerate}
+
+\end{solution}
+
+
+
