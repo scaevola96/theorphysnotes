@@ -1,0 +1,75 @@
+\section{Линейная алгебра}
+\begin{definition}
+	Векторное пространство $ V $ - множество снабженное двумя операциями:
+	\begin{enumerate}
+		\item сложение
+		\item $\forall x \in V$, $\lambda \in \mathbb{R} \quad \lambda x \in V$
+	\end{enumerate}
+\end{definition}
+\begin{definition}
+	$\operatorname{dim} V = n$,  то $\exists e_i \in V$, $ i = 1, \dots , n ;$ такие, что $ \forall v \in V $: $v = v^i e_i$, $v^i \in \mathbb{R}$
+\end{definition}
+ Выбор базиса даёт изоморфизм $V\backsimeq \mathbb{R}^n$ (линейное отображение). Это отображение устроено так: $ \displaystyle v = \left(v^i\right) \in V \longmapsto \left(\begin{array}{c}{v^{1}} \\ {\vdots} \\ {v^{n}}\end{array}\right) \in \mathbb{R}^{n}$, а обратное $ \mathbb{R} \backsimeq V $, $\mathbb{R \ni \left(\begin{array}{c}{v^{1}} \\ {\vdots} \\ {v^{n}}\end{array}\right)} \longmapsto v^i e_i \in V$
+ 
+ $$
+ \forall e \in V \longrightarrow \begin{array}{l}{\mathbb{R} \rightarrow V} \\ {\lambda \in \mathbb{R} \rightarrow \lambda e \in V}\end{array}
+ $$
+ 
+\begin{definition}
+ 	$U \subset V$ подмножество векторное пространтсво $ V $ называется \textbf{подпространством}, если $ U$ замкнуто относительно сложения и умножения на $ \lambda \in \mathbb{R}$
+\end{definition}
+
+\begin{statement}
+	Все векторные пространства  одинаковой размерности изоморфны.
+\end{statement}
+
+\begin{definition}
+	Отображение $ \varphi: V \mapsto W $, где $ V $ и $ W $ векторные пространства, называется линейным, если $\forall v_1 , v_2 \in V, \forall \in \mathbb{R}$ выполняется
+	$$
+	\begin{array}{l}{\varphi\left(v_{1}+v_{2}\right)=\varphi\left(v_{1}\right)+\varphi\left(v_{2}\right)} \\ {\varphi\left(\lambda v_{1}\right)=\lambda \varphi\left(v_{1}\right)}\end{array}
+	$$
+	
+\end{definition}
+
+$
+\operatorname{Hom}(V, W)= \left\{\varphi | \varphi - \text{линейное отображение} \right\} 
+$-векторное пространтво	 
+\begin{exercise}
+	Пусть $ \{e_i\} $ - базис в $ V $, а $\{b_j\} $ - базис в $ W $.
+\end{exercise}
+
+$\varphi :\left(v^{i}\right) \rightarrow\left(w^{j}\right) \quad i=1, \ldots, \operatorname{dim} V=n$
+$v \rightarrow \varphi(v)=w \quad j=1, \ldots, \operatorname{dim} w=m$
+
+$\varphi - \text{линейно} \Longrightarrow w^{i}=A_{i}^{j} v^{i}$, где $ A_{i}^{j} \in \mathbb{R} $
+
+$$
+\begin{array}{c}{\varphi\left(v^{i} e_{i}\right)=v^{i} \varphi\left(e_{i}\right)} \\ {W \ni \varphi\left(e_{i}\right)=A_{i}^{j} f_{j}}\end{array}
+$$
+Таким образом 
+$$
+\operatorname{Hom}(V, W) \cong 
+\left\{\begin{array}{ll}{A_{i}^{j}}  &i=1, \cdots \cdot \\ & j=1, \cdots \end{array}\right\} = \mathbb{R}^{n \cdot m} \longleftarrow M a t_{n \times m}(\mathbb{R})
+$$
+
+\begin{definition}
+	$V_1, V_2$ - векторные простнаства, тогда $V_{1} \oplus V_{2}=\left\{\left(u, u_{2}\right) | u_{i} \in V_{i}\right\}$
+	
+
+	\begin{enumerate}
+		\item 
+		$\left(u_{1}, u_{2}\right)+\left(u_{1}^{\prime}, u_{2}^{\prime}\right)=\left(u_{1}+u_{1}^{\prime}\right.
+		\left.u_{2}+u_{2}^{\prime}\right),$
+		\item 
+		$ \quad \lambda\left(u_{1}, u_{2}\right)=\left(\lambda u_{1}, \lambda u_{2}\right) $
+	\end{enumerate}
+
+\end{definition}
+
+$V_{1}, V_{2}$ вложены в $V_{1} \oplus V_{2}$ $ u \in V_i \longmapsto(u, 0) \in V_{1} \oplus V_{2} $
+
+\begin{definition}
+	Для векторного пространства $ V $ , просратранство линейных функционалов на $ V $ обозначается $ V^{*}$ и называется двойственным пространством. 
+	$$V^{*} :=\operatorname{Hom}(V, \mathbb{R}), \quad \operatorname{dim} V^{*}=\operatorname{dim} V $$
+\end{definition}
+
