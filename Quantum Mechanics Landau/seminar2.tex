@@ -1,0 +1,149 @@
+\section{Семинар 2}
+\begin{exercise}
+	Вычислите среднее значение спина $\langle\boldsymbol{S}\rangle$ и его дисперсию $\left\langle(\boldsymbol{S}-\langle\boldsymbol{S}\rangle)^{2}\right\rangle$ для чистого $\ket{\chi}= (\ket{\uparrow}+\ket{\downarrow}) / \sqrt{2}$ 2 и смешанного $\hat{\rho}=\left(\hat{\mathbb{P}}_{\uparrow}+\hat{\mathbb{P}}_{\downarrow}\right) / 2$  состояний спина $1/ 2$. \textit{Комментарий:}  первая величина — это вектор, а вторая
+	— это скаляр, длина вектора. \textit{Указание:} Для частицы со спином $1 / 2$ 2 (например, электрон) \textit{оператор спина} а (собственного
+	момента)  равен $\hat{\boldsymbol{S}}=(\hbar / 2) \hat{\boldsymbol{\sigma}}$ (то есть $\hat{S}_{x}=(\hbar / 2) \hat{\sigma}_{x}$ и т. д.).
+	
+\end{exercise}	
+
+\begin{solution}
+	$\langle\boldsymbol{S}\rangle$ = $\bra{\chi}\hat{\boldsymbol{S}}\ket{\chi} = $
+	$\displaystyle \frac{\hbar}{2} \cdot \frac{1}{2} \left(\begin{array}{l}{1} \hspace{7pt} {1}\end{array}\right)
+	 \left(\begin{array}{c}{\hat{\sigma}_{x}} \\ {\hat{\sigma}_{y}} \\ {\hat{\sigma}_{z}}\end{array}\right) \left(\begin{array}{l}{1} \\ {1}\end{array}\right)= $ 
+	 $
+	 	\frac{\hbar}{2} \left(\begin{array}{l}{1} \\ {0} \\ {0}\end{array}\right)
+	 $
+	 $$
+	 \left\langle(\boldsymbol{S}-\langle\boldsymbol{S}\rangle)^{2}\right\rangle= \bra{\chi}( 
+	 \boldsymbol{S}-\langle\boldsymbol{S}\rangle)^{2}  \ket{\chi} =\frac{\hbar^2}{4\cdot 2} \left(\begin{array}{l}{1} \hspace{7pt} {1}\end{array}\right)
+	 \left(\left(\hat{\sigma}_x -1\right)^2+ \hat{\sigma}_{y}^2 +\hat{\sigma}_{z}^2\right)
+	 \left(\begin{array}{l}{1} \\ {1}\end{array}\right)
+	 $$
+	 
+	 $$
+	 \frac{\hbar^2}{4\cdot 2} \left(\begin{array}{l}{1} \hspace{7pt} {1}\end{array}\right)
+	 \left(3\mathbb{I} -2\hat{\sigma}_x +1\right)
+	 \left(\begin{array}{l}{1} \\ {1}\end{array}\right) = \frac{\hbar^2}{2}
+	 $$
+	 
+	 
+	 
+	 $$
+	 \hat{\rho}=\frac{1}{2}\left(\begin{array}{ll}{1} & {1} \\ {1} & {1}\end{array}\right)
+	 $$
+	 
+	 $$
+	 \operatorname{Tr}\hat{\rho}\hat{\boldsymbol{S}} = \frac{\hbar}{2} \operatorname{Tr}\frac{1}{2}\left(\begin{array}{ll}{1} & {1} \\ {1} & {1}\end{array}\right)
+	 \left(\begin{array}{c}{\hat{\sigma}_{x}} \\ {\hat{\sigma}_{y}} \\ {\hat{\sigma}_{z}}\end{array}\right)=\frac{\hbar}{2}
+	  \left(\begin{array}{c}\operatorname{Tr}\left(\begin{array}{cc}\frac{1}{2} & \frac{1}{2} \\
+	 \frac{1}{2} & \frac{1}{2} \\ \end{array}\right) \\ \operatorname{Tr} \left(\begin{array}{cc}
+	\frac{i}{2} & -\frac{i}{2} \\ \frac{i}{2} & -\frac{i}{2} \\ \end{array} \right) \\
+	\operatorname{Tr} \left(\begin{array}{cc} \frac{1}{2} & -\frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \\	\end{array} \right) \\ \end{array} \right) = \frac{\hbar}{2} \left(\begin{array}{l}{1} \\ {0} \\ {0}\end{array}\right)
+	  $$
+	  
+	  
+	  $$
+	  \operatorname{Tr} \hat{\rho} \left(\boldsymbol{S}-\langle\boldsymbol{S}\rangle\right)^{2} = \operatorname{Tr} \hat{\rho} \left(\left(\hat{\sigma}_{x}-1\right)^{2}+\hat{\sigma}_{y}^{2}+\hat{\sigma}_{z}^{2}\right) = \operatorname{Tr} \frac{1}{2}\left(\begin{array}{ll}{1} & {1} \\ {1} & {1}\end{array}\right) \left(\begin{array}{cc} 2 & -1 \\ -1 & 2 \\\end{array}\right) = \frac{\hbar^2}{2}
+	  $$
+	 
+	 
+\end{solution}
+
+
+\begin{problem}{Блоховское представление двухуровневой системы}
+	\begin{enumerate}
+		\item 
+		Покажите, что матрицу плотности произвольной двухуровневой системы самого общего вида можно разложить по
+		матрицам Паули в следующем виде:
+		$$
+		\hat{\rho}=\frac{1}{2}(\hat{\mathbb{I}}+\hat{\boldsymbol{\sigma}} \cdot \boldsymbol{n})
+		$$
+		
+		\item 
+		При каком условии на $ \boldsymbol{n} $, эта матрица плотности описывает чистое состояние?
+		
+		\item 
+		Вычислите средние значения $\left\langle\hat{\sigma}_{x, y, z}\right\rangle$  по состоянию, описываемому такой матрицей плотности.
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\begin{enumerate}
+		\item
+		$$
+		\hat{\rho}=\sum_{\alpha} p_{\alpha}\ket{\alpha}\bra{\alpha}
+		$$
+		
+		Так как $ \hat{\rho} = \hat{\rho}^\dagger $  тогда $ \hat{\rho} $ можно раложить по базису 
+		$$
+		\hat{\rho} = \hat{\boldsymbol{\sigma}}\boldsymbol{n} + n_0 \sigma^0
+		\qquad
+		\operatorname{Tr} \hat{\rho}=1
+		$$
+		
+		$$
+		\operatorname{Tr} \hat{\sigma}^{i}=0 \qquad i \in \left\lbrace 1,2,3\right\rbrace
+		$$
+		
+		$$
+		\operatorname{Tr} \hat{\sigma}^{0}=2 \Longrightarrow n_{0}=\frac{1}{2}
+		$$
+		
+		$$
+		\hat{\rho}=\frac{1}{2}\left(\hat{\hat{\sigma}}^{0}+n^{i} \hat{\sigma}_{i}\right)
+		$$
+		
+		$$
+		\bra{\psi}\hat{\rho}\ket{\psi}\geq 0
+		\quad
+		\hat{\rho} = 
+		\frac{1}{2}\left(\begin{array}{ll}{1+n_{z}} & {n_{x} -i n_{y}} \\ n_{x}+{i n_{y}} & {1-n_{z}}\end{array}\right)
+		$$
+		
+		
+		$$
+		\left\lbrace\begin{array}{l}{\left|n_{z}\right| \leq 1} \\ {1-n_{z}^{2}-n_{x}^{2}-n_y^{2} \geq 0}\end{array}\right.
+		\Longrightarrow
+		\vec{n} \in \bar{B}_{1}(0)
+		$$
+		
+		\item 
+		
+		$$
+		\rho^{2}=\rho
+		$$
+		
+		$$
+		\hat{\rho}^{2}=\frac{1}{4}\left(\hat{\sigma}_{0}+n_i \hat{\sigma}_{i}\right)^{2} =\frac{1}{4} \left(
+		\left(\overline{n} \overline{\sigma}\right)^{2}+2\left(n_{0} \sigma_0\right)(\overline{n} \overline{\sigma})+\left(n_{0} \sigma_0 \right)^{2}
+		\right) = 
+		\frac{1}{4} \hat{\sigma}_{0}+\frac{1}{2} n^{i} \hat{\sigma}_{i}+\frac{1}{4}(\vec{n})^{2} \hat{\sigma}_{0} =
+		$$
+		
+		$$
+		=\frac{1}{2}\left(\frac{1+|\vec{n}^2|}{2}\sigma_{0} +n^i \sigma_{i}\right)
+		$$
+		
+		$$	
+		\frac{1+|\vec{n}^2|}{2}=1 \Longrightarrow 	|\vec{n}|^{2}=1 \Longleftrightarrow 
+		\vec{n} \in \mathbb{S}^{2}
+		$$
+		
+		\item 
+		$$
+		\langle \sigma_{i}\rangle = \operatorname{Tr}\left( \frac{1}{2}\left( \hat{\sigma_{0}}+ n^k \hat{\sigma}_k\right) \hat{\sigma}_{i} \right)
+		$$
+		
+		
+		$$
+		\operatorname{Tr}\left(\frac{1}{2}\left(\hat{\sigma}_{i}+n^{k}\left(\delta_{ki} \hat{\sigma_{0}}+\varepsilon_{kin} \hat{\sigma}_{n}\right)\right)\right) = 
+		n_{i}
+		$$
+		
+		$$
+		\langle\hat{\sigma}\rangle=\vec{n}
+		$$
+		
+	\end{enumerate}
+\end{solution}	
+	

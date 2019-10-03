@@ -194,5 +194,132 @@ $$
 
 \end{solution}
 
+\newpage
+\begin{problem}{\textbf{Осцилляции Раби}}
+	На двухуровневую систему накладывается периодическое поле, которое может вызывать переходы между этой парой
+	уровней:
+	$$
+	\hat{H}(t)=\left(\begin{array}{cc}{\varepsilon_{1}} & {V e^{-i \omega t}} \\ {V e^{i \omega t}} & {\varepsilon_{2}}\end{array}\right)
+	$$
+	В начальный момент времени система находилась в состоянии $|\psi(t=0)\rangle=\ket{\uparrow}$. Определите вероятность обнаружить её
+	в состоянии $\ket{\downarrow}$  через произвольное время $t$. Что происходит при резонансе, когда отстройка частоты $\delta \equiv \varepsilon_{1}-\varepsilon_{2}-\omega$ обращается в ноль? Указание: покажите, что от зависимости гамильтониана от времени можно избавиться «переходом во вращающуюся
+	систему отсчёта» (rotating wave approximation) — унитарным преобразованием вида $\hat{U}(t)=e^{i \hat{\sigma}_{z} \omega_{0} t}$.
+	Чему равна соответствующая частота $\omega_{0}$?
+	
+\end{problem}
+
+\begin{solution}
+	Для начала преобразуем Гамильтониан.
+	$$
+	\hat{H}^{\prime}=\hat{U} \hat{H} \hat{U}^{\dagger}-i \hbar \hat{U} \partial_{t} \hat{U}^{\dagger}
+	$$
+	
+	$$
+	\hat{U}(t)=e^{i \hat{\sigma}_{z} \omega_{0} t} = \cos \omega_{0} t +i \hat{\sigma}_{z} \sin \omega_{0} t
+	$$
+	
+	$$
+	\hat{H}^{\prime} = \left( \cos \omega_{0} t +i \hat{\sigma}_{z} \sin \omega_{0} t \right)\left(\begin{array}{cc}{\varepsilon_{1}} & {V e^{-i \omega t}} \\ {V e^{i \omega t}} & {\varepsilon_{2}}\end{array}\right) \left( \cos \omega_{0} t -i \hat{\sigma}_{z} \sin \omega_{0} t \right) + 
+	$$
+	
+	$$ + i\hbar \omega_{0} \left( \cos \omega_{0} t +i \hat{\sigma}_{z} \sin \omega_{0} t \right) \left( \sin \omega_{0} t +i \hat{\sigma}_{z} \cos \omega_{0} t \right)
+	$$
+	
+	$$
+	\hat{H}^{\prime} =\left(
+	\begin{array}{cc}
+	\epsilon_1 - \omega _0 &  V
+	e^{i t \omega _0-i t \omega +i t \omega _0} \\
+ 	V e^{-i t \omega_0 + i t \omega -i t \omega _0} & \omega _0 +\epsilon_2   \\
+	\end{array}
+	\right)
+	$$
+	
+	$$
+	\omega_0 = \frac{\omega}{2}
+	$$
+	
+	
+\end{solution}
+
+
+\newpage
+
+\begin{problem}{\textbf{Два спина}}
+	\\
+	Найдите уровни энергии и собственные состояния для следующего гамильтониана, описывающего систему двух взаимодействующих спинов 1/2:
+	$$
+	\hat{H}=-J\left(\boldsymbol{\sigma}_{1} \cdot \boldsymbol{\sigma}_{2}\right)=-J\left(\sigma_{1}^{x} \sigma_{2}^{x}+\sigma_{1}^{y} \sigma_{2}^{y}+\sigma_{1}^{z} \sigma_{2}^{z}\right)
+	$$
+	
+\end{problem}	
+
+\begin{solution}
+ Будем решать $$ \hat{H}\ket{\psi}=E\ket{\psi } \qquad \psi \in \mathbb{H}=\mathbb{H}_1 \otimes \mathbb{H}_2 $$
+ 
+ $$ \hat{H}\ket{\psi_1} \ket{\psi_2 }=E\ket{\psi_1} \ket{\psi_2} \qquad \ket{\psi } \in \mathbb{H}=\mathbb{H}_1 \otimes\mathbb{H}_2 $$
+ 
+  
+ Выберем базис
+ $$
+ \ket{\uparrow \uparrow},\ket{\uparrow \downarrow} ,\ket{\downarrow \uparrow} ,\ket{\downarrow \downarrow}
+ $$
+ 
+ $$
+ \left(\begin{array}{l}\ket{\uparrow \uparrow} \\ \ket{\uparrow \downarrow} \\ \ket{\downarrow \uparrow} \\ \ket{\downarrow \downarrow} \end{array}\right)
+ $$
+ 
+ $$
+ \hat{H} = \sigma^{x}_1 \otimes \sigma^{x}_{2} + \sigma^{y}_1 \otimes \sigma^{y}_{2} +  \sigma^{z}_1 \otimes \sigma^{z}_{2}
+ $$
+ 
+ $$ 
+ \hat{H}=-J\left( \left(\begin{array}{llll}{0} & {0} & {0} & {1} \\ {0} & {0} & {1} & {0} \\ {0} & {1} & {0} & {0} \\ {1} & {0} & {0} & {0}\end{array}\right) + \left(\begin{array}{cccc}{0} & {0} & {0} & {-1} \\ {0} & {0} & {1} & {0} \\ {0} & {1} & {0} & {0} \\ {-1} & {0} & {0} & {0}\end{array}\right) + \left(\begin{array}{cccc}{1} & {0} & {0} & {0} \\ {0} & {-1} & {0} & {0} \\ {0} & {0} & {-1} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)\right)=$$
+ 
+ $$= -J\left(\begin{array}{cccc}{1} & {0} & {0} & {0} \\ {0} & {-1} & {2} & {0} \\ {0} & {2} & {-1} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)
+ $$
+
+Собственные состояния $$
+-J\left(\begin{array}{cccc}{0} & {-1} & {1} & {0} \\ {0} & {0} & {0} & {1} \\ {0} & {1} & {1} & {0} \\ {1} & {0} & {0} & {0}\end{array}\right) \left(\begin{array}{l}\ket{\uparrow \uparrow} \\ \ket{\uparrow \downarrow} \\ \ket{\downarrow \uparrow} \\ \ket{\downarrow \downarrow} \end{array}\right)
+$$
+
+$$
+\ket{1}=\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt{2}} \qquad E = -3
+$$
+
+$$
+\ket{2}=\ket{\downarrow\downarrow}\qquad E=1
+$$
+
+$$
+\ket{3}=\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}}\qquad E=1
+$$
+
+$$
+\ket{4}=\ket{\uparrow\uparrow}\qquad E=1
+$$
+	
+\end{solution}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
