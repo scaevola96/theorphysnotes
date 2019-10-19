@@ -75,75 +75,141 @@
 		$$
 		
 		Так как $ \hat{\rho} = \hat{\rho}^\dagger $  тогда $ \hat{\rho} $ можно раложить по базису 
-		$$
+		$
 		\hat{\rho} = \hat{\boldsymbol{\sigma}}\boldsymbol{n} + n_0 \sigma^0
 		\qquad
 		\operatorname{Tr} \hat{\rho}=1
-		$$
+		$
 		
-		$$
+		$
 		\operatorname{Tr} \hat{\sigma}^{i}=0 \qquad i \in \left\lbrace 1,2,3\right\rbrace
-		$$
+		$
 		
-		$$
+		$
 		\operatorname{Tr} \hat{\sigma}^{0}=2 \Longrightarrow n_{0}=\frac{1}{2}
-		$$
+		$
 		
-		$$
+		$
 		\hat{\rho}=\frac{1}{2}\left(\hat{\hat{\sigma}}^{0}+n^{i} \hat{\sigma}_{i}\right)
-		$$
+		$
 		
-		$$
+		$
 		\bra{\psi}\hat{\rho}\ket{\psi}\geq 0
 		\quad
 		\hat{\rho} = 
 		\frac{1}{2}\left(\begin{array}{ll}{1+n_{z}} & {n_{x} -i n_{y}} \\ n_{x}+{i n_{y}} & {1-n_{z}}\end{array}\right)
-		$$
+		$
 		
 		
-		$$
+		$
 		\left\lbrace\begin{array}{l}{\left|n_{z}\right| \leq 1} \\ {1-n_{z}^{2}-n_{x}^{2}-n_y^{2} \geq 0}\end{array}\right.
 		\Longrightarrow
 		\vec{n} \in \bar{B}_{1}(0)
-		$$
+		$
 		
 		\item 
 		
-		$$
-		\rho^{2}=\rho
-		$$
+		$
+		\hat{\rho}^{2}=\hat{\rho}
+		$
 		
-		$$
+		$
 		\hat{\rho}^{2}=\frac{1}{4}\left(\hat{\sigma}_{0}+n_i \hat{\sigma}_{i}\right)^{2} =\frac{1}{4} \left(
 		\left(\overline{n} \overline{\sigma}\right)^{2}+2\left(n_{0} \sigma_0\right)(\overline{n} \overline{\sigma})+\left(n_{0} \sigma_0 \right)^{2}
 		\right) = 
 		\frac{1}{4} \hat{\sigma}_{0}+\frac{1}{2} n^{i} \hat{\sigma}_{i}+\frac{1}{4}(\vec{n})^{2} \hat{\sigma}_{0} =
-		$$
+		$
 		
-		$$
+		$
 		=\frac{1}{2}\left(\frac{1+|\vec{n}^2|}{2}\sigma_{0} +n^i \sigma_{i}\right)
-		$$
+		$
 		
-		$$	
+		$	
 		\frac{1+|\vec{n}^2|}{2}=1 \Longrightarrow 	|\vec{n}|^{2}=1 \Longleftrightarrow 
 		\vec{n} \in \mathbb{S}^{2}
-		$$
+		$
 		
 		\item 
-		$$
-		\langle \sigma_{i}\rangle = \operatorname{Tr}\left( \frac{1}{2}\left( \hat{\sigma_{0}}+ n^k \hat{\sigma}_k\right) \hat{\sigma}_{i} \right)
-		$$
+		$
+		\langle \hat{\sigma_{i}}\rangle = \operatorname{Tr}\left( \frac{1}{2}\left( \hat{\sigma_{0}}+ n^k \hat{\sigma}_k\right) \hat{\sigma}_{i} \right)
+		$
 		
 		
-		$$
+		$
 		\operatorname{Tr}\left(\frac{1}{2}\left(\hat{\sigma}_{i}+n^{k}\left(\delta_{ki} \hat{\sigma_{0}}+\varepsilon_{kin} \hat{\sigma}_{n}\right)\right)\right) = 
 		n_{i}
-		$$
+		$
 		
-		$$
+		$
 		\langle\hat{\sigma}\rangle=\vec{n}
-		$$
+		$
 		
 	\end{enumerate}
 \end{solution}	
+
+
+\begin{problem}{Термодинамика двухуровневой системы}
+	Двухуровневая система описывается гамильтонианом $
+	\hat{H}=-\boldsymbol{h} \cdot \hat{\boldsymbol{\sigma}}
+	$, где $
+	\boldsymbol{h}=\left(h_{x}, h_{y}, h_{z}\right)
+	$ , и находится при температуре $ T $. Вычислите средние значения $\left\langle\hat{\sigma}_{x, y, z}\right\rangle$.
+\end{problem}	
+
+\begin{solution}
+	$\displaystyle 
+	\hat{\rho}=\frac{1}{Z} e^{-\beta \hat{H}} = \frac{1}{Z} e^{-\frac{1}{T} \hat{H}} = \frac{1}{Z} e^{\frac{1}{T} h_x \hat{\sigma}_{x}+h_y \hat{\sigma}_{z}+h_z \hat{\sigma}_{z}}$
+	
+	
+	$ \displaystyle 
+	Z = \operatorname{Tr}	= \frac{1}{Z} e^{\frac{|h|}{T} \left(\frac{h_x \hat{\sigma}_{x}}{|h|}+\frac{h_y \hat{\sigma}_{y}}{|h|}+\frac{h_z \hat{\sigma}_{z}}{|h|}\right)} 
+	$
+	
+	$ \displaystyle 
+	\operatorname{Tr}\left(\cos \left(-i \frac{|\vec{h}|}{T}\right)+\sin \left(-\frac{-i |\vec{h}|}{T}\right) \cdot \frac{h_\alpha \hat{\sigma}^{\alpha}}{|\vec{h}|}\right)=
+	\operatorname{Tr}\left(\operatorname{ch } \left(\frac{|\vec{h}|}{T}\right)+\operatorname{sh}\left(\frac{|\vec{h}|}{T}\right) \cdot \frac{h_{\alpha} \sigma^{\alpha}}{|\vec{h}|}\right) = 2 \operatorname{ch} \frac{|\vec{h}|}{T}
+	$
+	
+	$ \displaystyle
+	\hat{\rho}=\frac{e^{\frac{1}{T}\left(h_{\alpha} \hat{\sigma}^{\alpha}\right)}}{2 \operatorname{ch} \frac{|\vec{h}|}{T}} = \frac{1}{2}\frac{\operatorname{ch}\frac{|\vec{h}|}{T} \cdot \mathbb{I} + \operatorname{sh}\frac{|\vec{h}|}{T} \frac{h_{\alpha} \hat{\sigma}^{\alpha}}{|\vec{h}|}}{\operatorname{ch}\frac{|\vec{h}|}{T}} = \frac{1}{2}\left(\mathbb{I} + \operatorname{th}\frac{|\vec{h}|}{T}\frac{h_{\alpha} \hat{\sigma}^{\alpha}}{|\vec{h}|}\right)
+	$
+	
+	
+	$
+	\left\langle \hat{\sigma}_{x}\right\rangle =\operatorname{Tr}\left(\hat{\rho} \hat{\sigma}_{x}\right)= \frac{1}{2} \operatorname{Tr}\left(\left(\mathbb{I}+\operatorname{th} \frac{|\vec{h}|}{T} \frac{h_{\alpha} \hat{\sigma}^{\alpha}}{|\vec{h}|}\right) \hat{\sigma}_{x}\right) = \frac{h_x}{h} \operatorname{th}\left(\frac{|\vec{h}|}{T}\right)
+	$
+	\\
+	Аналогично
+	\\
+	
+	$ 	\left\langle \hat{\sigma}_{y}\right\rangle = \frac{h_y}{h} \operatorname{th}\left(\frac{|\vec{h}|}{T}\right) $
+	$ 	\left\langle \hat{\sigma}_{z}\right\rangle = \frac{h_z}{h} \operatorname{th}\left(\frac{|\vec{h}|}{T}\right) $
+	
+\end{solution}	
+
+
+\begin{problem}
+	Рассмотрите двухуровневую систему, описываемую следующим гамильтонианом
+	$$\hat{H}=\left(\begin{array}{cc}{E_{0}} & {-\Delta} \\ {-\Delta} & {E_{0}}\end{array}\right)$$
+	В начальный момент система приготовлена в состоянии $ \ket{\psi(0)} = \ket{\uparrow} $ . Если бы мы позволилит системе эволюционировать самой по себе, то она совершала бы осцилляции Раби; в частности, через время $T=\frac{\pi \hbar}{2 \Delta}$ мы бы обнаружили её в состоятнии $ \ket{\downarrow} $, c вероятностью $P_{\downarrow}(T)=1$. Однако теперь вместо этого через каждый промежуток времени $\tau \ll T$ мы проводим измерение наблюдаемой $ \hat{\sigma}_{z} $. Определите вероятность $P_{\downarrow}(T)$ в таком случае.
+\end{problem}
+
+\begin{solution}
+$	\ket{\psi(t)} = e^{\frac{-i E_0 t}{\hbar}} \left(\cos \frac{\Delta t}{\hbar}\cdot\ket{\uparrow}+i \sin \frac{\Delta t}{\hbar}\cdot\ket{\downarrow}\right)$
+
+$$
+\hat{\rho}=\left(\begin{array}{c}{\cos ^{2}\left(\frac{\Delta t}{\hbar}\right) \quad-i \sin \left(\frac{\Delta t}{\hbar}\right) \cos \left(\frac{\Delta t}{\hbar}\right)} \\ {i \sin \left(\frac{\Delta t}{\hbar}\right) \cos \left(\frac{\Delta t}{\hbar}\right) \quad \sin ^{2}\left(\frac{\Delta t}{\hbar}\right)}\end{array}\right)
+$$
+После измерения
+
+$$\hat{\rho} \rightarrow \hat{\rho}^{\prime}=\left(\begin{array}{cc}{\cos ^{2}\left(\frac{\Delta t}{\hbar}\right)} & {0} \\ {0} & {\sin ^{2}\left(\frac{\Delta t}{\hbar}\right)}\end{array}\right)$$
+
+$$
+\hat{\rho}(t)=\ket{\psi}\bra{\psi}=\hat{U}\left(t, t_{0}\right)\ket{\psi(0)}\bra{\psi(0)}\hat{U}^\dagger\left(t, t_{0}\right) =\hat{U}\left(t, t_{0}\right)\hat{\rho}(0)\hat{U}^\dagger\left(t, t_{0}\right)
+$$
+
+$ \displaystyle 
+\hat{U}(t)=\exp (-i \hat{H} t / \hbar) = \hat{U}(t)=\exp (-i \hat{\mathbb{I}} t / \hbar) \hat{U}(t)=\exp (-i \hat{\sigma}_z t / \hbar) =\exp (-i E_0\hat{\mathbb{I}} t / \hbar)(\cos(\frac{\Delta t}{\hbar})\mathbb{I}+i\hat{\sigma}_{z}\sin(\frac{\Delta t}{\hbar})) = 
+ e^{-i\frac{E_0\hat{ \mathbb{I}} t }{ \hbar}} \left(\begin{array}{ll}{\cos{\alpha}} & {i\sin{\alpha}} \\ {i\sin{\alpha}} & {\cos{\alpha}}\end{array}\right) $
+\end{solution}
 	
