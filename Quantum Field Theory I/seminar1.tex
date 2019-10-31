@@ -28,3 +28,42 @@ $$ \displaystyle \frac{x}{e^{x}-1}=\sum_{n=0}^{\infty} \frac{B_{n} x^{n}}{n !}$$
 	$$
 	
 \end{solution}
+
+
+\begin{problem}
+
+\end{problem}
+
+\begin{solution}
+	$$
+	\omega_{n, p_{2}, \ldots, p_{d}}=\left[\left(\frac{\pi n}{L}\right)^{2}+p_{2}^{2}+\ldots+p_{d}^{2}\right]^{1 / 2}=\left[\left(\frac{\pi n}{L}\right)^{2}+\vec{p}_{ \|}^{2}\right]^{1 / 2}, \quad n=1,2,3, \ldots
+	$$
+	
+	$$
+	\begin{aligned} \frac{E(L)}{A} &=\sum_{n=1}^{\infty} \int \frac{d^{d-1} p_{ \|}}{(2 \pi)^{d-1}} \frac{1}{2}\left[\left(\frac{\pi n}{L}\right)^{2}+\vec{p}_{ \|}^{2}\right]^{1 / 2}=\\ &=\frac{1}{2} \sum_{n=1}^{\infty} \frac{\Omega_{d-1}}{(2 \pi)^{d-1}} \int_{0}^{\infty} p_{ \|}^{d-2} d p_{ \|}\left[\left(\frac{\pi n}{L}\right)^{2}+\vec{p}_{ \|}^{2}\right]^{1 / 2} \end{aligned}
+	$$
+	
+	$$
+	\Omega_{d-1}=\frac{2 \pi \frac{d-1}{2}}{\Gamma\left(\frac{d-1}{2}\right)}
+	$$
+	
+	$$
+	p_{ \|}=\left(\frac{\pi n}{L}\right) t
+	$$
+	
+	$$
+	\frac{E(L)}{A}=\frac{1}{2} \sum_{n=1}^{\infty}\left(\frac{\pi n}{L}\right)^{d} \frac{\Omega_{d-1}}{(2 \pi)^{d-1}} \int_{0}^{\infty} d t t^{d-2} \sqrt{1+t^{2}}=\frac{1}{2} \frac{\Omega_{d-1}}{(2 \pi)^{d-1}} \frac{\pi^{d}}{L^{d}} \zeta(-d) \int_{0}^{\infty} d t t^{d-2} \sqrt{1+t^{2}}
+	$$
+	
+	$$
+	\begin{aligned} \int_{0}^{\infty} d t t^{d-2} \sqrt{1+t^{2}} &=\frac{1}{2} \int_{1}^{\infty} d u u^{1 / 2}(u-1)^{\frac{d-3}{2}} \stackrel{v=\frac{1}{u}}{=} \int_{0}^{1} d v v^{-\frac{d}{2}-1}(1-v)^{\frac{d}{2}-\frac{3}{2}}=\\ &=\frac{1}{2} B\left(-\frac{d}{2}, \frac{d-1}{2}\right)=\frac{\Gamma(-d / 2) \Gamma\left(\frac{d-1}{2}\right)}{2 \Gamma(-1 / 2)} \end{aligned}
+	$$
+	
+	$$
+	\frac{E(L)}{A}=-\frac{1}{2^{d+1}} \zeta(-d) \frac{\pi^{d / 2}}{L^{d}} \Gamma\left(-\frac{d}{2}\right)
+	$$
+	
+	$$
+	\frac{F}{A}=-\frac{\partial}{\partial L}\left(\frac{E(L)}{A}+\frac{E(D-L)}{A}\right) \stackrel{D \rightarrow \infty}{=}\left(-\frac{d}{2}\right) \Gamma\left(-\frac{d}{2}\right) \frac{\zeta(-d) \pi^{d / 2}}{2^{d} L^{d+1}}=\frac{\pi^{d / 2} \Gamma(1-d / 2) \zeta(-d)}{2^{d} L^{d+1}}
+	$$
+\end{solution}	

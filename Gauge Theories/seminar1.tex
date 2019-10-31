@@ -1,0 +1,34 @@
+\begin{problem}[Рубаков I]
+	Показать, что уравнения Максвелла $\partial_{\mu} F_{\mu \nu}=0$ действительно являются усло- 
+	виями экстремальности действия относительно вариаций поля $A_{\mu}(x)$ при фиксиро- 
+		ванных значениях $A_{\mu}(x)$на границе пространственно-временного объема, в который 
+		помещена система. 
+		
+\end{problem}
+
+\begin{solution}
+	$$S=-\frac{1}{4} \int d^{4} x F_{\mu \nu} F_{\mu\nu} \qquad F_{\mu}=\partial_{\mu} A_{\nu}-\partial_{\nu} A_{\mu}$$
+	
+	$$\delta S =-\frac{1}{4} \int d^{4} x \delta\left(F_{\mu \nu} F_{\mu \nu}\right) =-\frac{1}{4} \int d^{4} x  \hspace{3pt }2 F_{\mu \nu} \delta F_{\mu\nu}$$
+	
+	
+	$$-\frac{1}{4} \left[\int d^{4} x 2 F_{\mu \nu} \delta\left(\partial_{\mu} A_{\nu}-\partial_{\nu} A_{\mu}\right) \right] = 
+	$$
+	
+	$$
+	-\frac{1}{4} \left[ \int d^{4} x 2 F_{\mu \nu}  \partial_{\mu} \delta A_{v}-\int d^{4} x 2 F_{\mu \nu}  \partial_{\nu} \delta A_{\mu}  \right]
+	$$ = 
+	$$
+	-\frac{1}{4} \left[ \int d^{4} x 2 F_{\mu \nu}  \partial_{\mu} \delta A_{v} + \int d^{4} x 2 F_{\nu \mu \nu}  \partial_{\mu} \delta A_{\nu} \right] = 
+	- \int d^{4} x  F_{\mu \nu} \partial_{\mu} \delta A \nu = 
+	$$
+	
+	$$
+	\int d^{4} x  F_{\mu \nu} \partial_{\mu} \delta A \nu = F_{\mu \nu} \delta A_{\nu} |_{\partial M } - 	\int d^{4} x \partial_{\mu} F_{\mu \nu}  \delta A_{\nu} = 0
+	$$
+	
+	$$
+	\partial_{\mu} F_{\mu \nu} = 0
+	$$
+	
+\end{solution}

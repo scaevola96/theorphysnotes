@@ -1,15 +1,12 @@
-\documentclass[a4paper,12pt]{article}
+
+
+\documentclass[a4paper,12pt]{book}
 %%% Работа с русским языком
 \usepackage{cmap}					% поиск в PDF
 \usepackage[T2A]{fontenc}			% кодировка
 \usepackage[utf8]{inputenc}			% кодировка исходного текста
 \usepackage[english,russian]{babel}	% локализация и переносы
 %%
-
-\usepackage[normalem]{ulem}
-\newcommand{\stkout}[1]{\ifmmode\text{\sout{\ensuremath{#1}}}\else\sout{#1}\fi}
-
-%
 \usepackage{cmap} 
 \usepackage{ gensymb }
 \usepackage[unicode]{hyperref}
@@ -39,16 +36,31 @@
 \setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
 \setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
 \usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
-\title{General Relativity Seminars}
+\title{Notes on Quantitative Topics}
 \date{\today}
-
+\author{Sergey Barseghyan}
 %% Теоремы Определения Леммы
-\newtheorem{problem}{Задача}[section]
+\newtheorem{exercise}{Упражнение}[section]
 \newtheorem*{solution}{Решение}
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорема}
+\newtheorem{lemma}{Лемма}
+\newtheorem{example}{Пример}
+%
+\theoremstyle{plain}
+%\newtheorem{proof}{Доказательство}
+%
+\newtheorem{statement}{Утверждение}
+
+\theoremstyle{remark}
+\newtheorem*{properties}{Свойства}
 
 
 
 
+%% Коммутатор
 
 
 
@@ -56,8 +68,7 @@
 \begin{document} % конец преамбулы, начало документа
 	
 	\maketitle
-	\input{seminar1.tex}
-	\input{seminar2.tex}
-	\
+	\chapter{Теория Вероятностей}
+	\input{lec1.tex}
 	
-\end{document} % коне
+\end{document}

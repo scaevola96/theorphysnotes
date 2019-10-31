@@ -5,11 +5,6 @@
 \usepackage[utf8]{inputenc}			% кодировка исходного текста
 \usepackage[english,russian]{babel}	% локализация и переносы
 %%
-
-\usepackage[normalem]{ulem}
-\newcommand{\stkout}[1]{\ifmmode\text{\sout{\ensuremath{#1}}}\else\sout{#1}\fi}
-
-%
 \usepackage{cmap} 
 \usepackage{ gensymb }
 \usepackage[unicode]{hyperref}
@@ -28,6 +23,8 @@
 \usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
 
 %% Шрифты
+
+%%\usepackage{bbold}
 \usepackage{euscript}	 % Шрифт Евклид
 \usepackage{mathrsfs} % Красивый матшрифт
 
@@ -39,16 +36,17 @@
 \setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
 \setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
 \usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
-\title{General Relativity Seminars}
+\title{Quantum Mechanics Seminars}
 \date{\today}
-
+\author{Sergey Barseghyan}
 %% Теоремы Определения Леммы
-\newtheorem{problem}{Задача}[section]
+\newtheorem{exercise}{Упражнение}[section]
 \newtheorem*{solution}{Решение}
+\newtheorem{problem}{Задача}[section]
 
 
 
-
+%% Коммутатор
 
 
 
@@ -57,7 +55,6 @@
 	
 	\maketitle
 	\input{seminar1.tex}
-	\input{seminar2.tex}
-	\
 	
-\end{document} % коне
+	
+\end{document}

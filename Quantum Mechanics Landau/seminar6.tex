@@ -1,0 +1,123 @@
+\section[Cеминар 6]{Точно решаемые модели II}
+
+\begin{problem}[Теорема Вика]
+	$$
+	\hat{\rho}=\frac{1}{Z} e^{-\beta \omega \hat{a}^{\dagger} \hat{a}}
+	$$
+	$
+		\langle e^{\alpha_1 \hat{a} + \alpha_2 \hat{a}^\dagger}\rangle = \operatorname{Tr}(\hat{\rho} \hspace{2pt }e^{\alpha_1 \hat{a} + \alpha_2 \hat{a}^\dagger})
+	$
+
+	$$
+	e^{\alpha_1 \hat{a} + \alpha_2 \hat{a}^{\dagger}} = e^{\alpha_1 \hat{a}} e^{\alpha_2 \hat{a}^\dagger}e^{-\frac{1}{2}\alpha_1 \alpha_2} = \frac{1}{Z}e^{\frac{1}{2}\alpha_1 \alpha_2}\operatorname{Tr}e^{\alpha_1 \hat{a}} e^{\alpha_2 \hat{a}^{\dagger}} e^{\beta \omega \hat{a}^{\dagger}\hat{a}}
+	$$
+	
+		$$
+		\hat{a}\ket{\alpha} = \alpha \ket{\alpha}
+		\hat{a}^{\dagger} = \hat{a}^{\dagger} \sum_{n} \frac{\alpha^n}{\sqrt{n!}}\ket{n} = 
+		\sum_{n} \frac{\alpha^{n}}{\sqrt{n^{2}}} \sqrt{n+1}\ket{n+1} 
+		\hat{a} \hat{a}^{\dagger}\ket{\alpha}=\alpha \hat{a}^{\dagger}\ket{\alpha}+\ket{\alpha}
+		$$
+		
+		$$
+		\hat{I} = \int \frac{d\alpha d \alpha^{*} }{\pi} e^{-|\alpha|^2} \ket{\alpha}\bra{\alpha}
+		\langle\rangle = \frac{1}{Z} e^{\frac{1}{2} \alpha_1 \alpha_2}\\ \operatorname{Tr}(e^{\alpha_{1} \hat{\alpha}} e^{\alpha_{2} \hat{\alpha}^{\dagger}} \int \frac{d\alpha d \alpha^{*} }{\pi} e^{-|\alpha|^2} \ket{\alpha}\bra{\alpha})
+		A = \int \frac{d\alpha d \alpha^{*} }{\pi} e^{-|\alpha|^2} e^{\alpha_{1} \hat{\alpha}} e^{\alpha_{2} \hat{\alpha}^{\dagger} }\ket{\alpha}\bra{\alpha} e^{-\beta \omega \hat{a}^{\dagger} \hat{a}} 
+		$$
+		$$
+		\bra{\alpha} e^{-\beta \omega \hat{a} \hat{a}^\dagger} = \bra{e^{-\beta \omega \hat{a} \hat{a}^\dagger} \alpha} 
+		$$
+		
+		$$
+		e^{-\beta \omega \hat{a} \hat{a}^\dagger} \ket{\alpha} = e^{-\beta \omega \hat{a} \hat{a}^\dagger}  \sum_{n} \frac{\alpha^n}{\sqrt{n!}}\ket{n} = 
+		$$
+		
+		$$
+		\sum_{n} \frac{\alpha^n}{\sqrt{n!}}  e^{-\beta \omega \hat{a} \hat{a}^\dagger} \ket{n}\\
+		\bra{e^{-\beta \omega \hat{a} \hat{a}^\dagger} \alpha} = \sum_{n} \frac{(\alpha^{*})^n}{\sqrt{n!}}  e^{-\beta \omega \hat{a} \hat{a}^\dagger} \ket{n}
+		$$
+		
+		$$
+		e^{\alpha_2 \hat{a}^{\dagger}} \ket{\alpha} = 	e^{\alpha_2 \hat{a}^{\dagger}}  \sum_{n} \frac{\alpha^n}{\sqrt{n!}}\ket{n}\\
+			e^{\alpha_2 \hat{a}^{\dagger}} \ket{n} = \sum^{\infty}_{k = 0} \frac{\alpha^k_{2}(\hat{a}^{\dagger})^k}{k!} \ket{n} =  \sum^{\infty}_{k = 0} \frac{\alpha^k_{2}}{k!}\sqrt{\frac{(n+k)!}{n!}} \ket{n + k} 
+		$$
+		
+		$$ 
+			\langle
+			...
+			\rangle
+			= \frac{1}{Z}e^{\frac{1}{2} \alpha_{1} \alpha_{2}}\operatorname{Tr}(e^{\alpha_{2} \hat{a}^{\dagger}}e^{\alpha_{1} \hat{a}} \int \frac{d \alpha d \alpha^{*}}{\pi}e^{-|\alpha|^2} \ket{\alpha}\bra{\alpha} e^{\beta \omega \hat{a}^\dagger \hat{a}} )
+		$$
+		
+		$$
+			e^{\alpha_{1} \hat{a}}\ket{\alpha} = e^{\alpha_{1} \alpha} \ket{\alpha}$$
+		
+		
+		$$
+			e^{-\alpha_{2} \vec{a}^{+}} e^{\alpha }
+			e^{\alpha_{2}\hat{a}^{\dagger}}e^{\alpha_{1}\hat{a}}\ket{\alpha} =$$ 
+			
+		$$ e^{
+			\alpha_{1}\alpha} e^{\alpha_{2} \hat{a}^{\dagger}}\ket{\alpha} = e^{\alpha_{1} \alpha} e^{\alpha_{2} \hat{a}^{\dagger}}\sum_{n} \frac{\alpha^n}{\sqrt{n!}} \ket{n} =
+		$$
+		
+		$$
+		 e^{\alpha_1 \alpha}\left(\sum_{n} \frac{\alpha^n}{\sqrt{n!}} \sum_{k} \frac{\alpha^n}{\sqrt{n}} \frac{(n+k)!}{n!} \ket{n+k}  \right) = e^{\alpha_{1} \alpha} \sum_{n} \sum_{k} \frac{
+	\alpha^n \alpha_{2}^n \sqrt{(n+k)!}}{n!k!} \ket{n+k}
+		$$
+	
+		$$
+		\operatorname{Tr}\left(\int \frac{d \alpha d \alpha^{*}}{\pi} e^{|\alpha|^2} e^{\alpha_{1} \alpha} \left( \sum_{n} \sum_{k} \frac{\alpha^n \alpha^{k}_{2}}{k! n!}\ket{n+k}\right) \left(\sum_{p} \frac{(\alpha^{*})^p}{\sqrt{p!}} e^{-\beta \omega p} \bra{p} \right) \right)
+		$$
+		
+		$$
+			\operatorname{Tr}\left(\int \frac{d \alpha d \alpha^{*}}{\pi} \sum_{p} \sum_{k} \sum_{n} \frac{\alpha^n (\alpha^{*})^p \alpha^{h}_{2}}{k! n! \sqrt{p!}} \sqrt{(n+k)!} e^{-\beta \omega p} \delta_{p n+k}\right)
+		$$
+		
+		$$
+		\operatorname{Tr}(\int \frac{d \alpha d \alpha^{*}}{\pi} e^{-|\alpha|^2} e^{\alpha_{1} \alpha_{1}} \sum_n \sum_k \frac{\alpha^n (\alpha^{*})^{n+k} \alpha^k_{2}}{k! n! } e^{\beta \omega (n+k)}) = \sum_{n} \frac{\alpha^n}{n!} e^{\beta \omega n} (\alpha^{*})^n \sum_{k} \frac{(\alpha^{*})^k \alpha_{2}^k}{k} e^{\beta \omega k} =
+		$$
+		
+		$$
+		 \exp(\alpha \alpha^{*} e^{-\beta})\exp(\alpha_{2} \alpha^{*} e^{-\beta})
+		$$
+		
+		$$
+		= \int \frac{d \alpha d \alpha^{*}}{\pi} e^{-|\alpha|^2}e^{|\alpha|^2 e^{-\beta \omega}} e^{\alpha_1 \alpha} e^{\alpha_{2} \alpha^{*} e^{-\beta \omega}}
+		$$
+		
+		$$
+		\iint \limits_{-\infty}^{+\infty} \frac{dx dy}{\pi} e^{-(1-e^{\beta \omega})(x^2+y^2)}e^{\alpha_{1}(x+iy)}e^{\alpha_{2}(x-iy)e^{-\beta \omega}}
+		$$
+		
+	
+		
+		$$
+		I_{2} =  \int_{+\infty}^{-\infty} e^{-(1-e^{\beta \omega})x^2} e^{\alpha_{1} x +\alpha_{2} x e^{-\beta \omega}} dx
+		$$
+		
+		$$
+		I_{1} = \frac{1}{\pi}\int_{+\infty}^{-\infty} e^{-(1-e^{\beta \omega})y^2} e^{iy(\alpha_{1}  -\alpha_{2}e^{-\beta \omega}) } dy
+		$$
+		
+		$$
+		I_1 = \frac{1}{\pi}\sqrt{\frac{\pi}{(1-e^{-\beta \omega})}} \exp(\frac{(\alpha_{1} +\alpha_{2} e^{-\beta \omega})^2}{4(1-e^{-\beta \omega})})
+		$$
+	
+			
+		$$
+		I_2 = \frac{1}{\pi}\sqrt{\frac{\pi}{(1-e^{-\beta \omega})}} \exp(-\frac{(\alpha_{1} -\alpha_{2} e^{-\beta \omega})^2}{4(1-e^{-\beta \omega})})
+		$$
+		
+		
+		$$
+		I_1 I_2  =  \frac{1}{1-e^{\beta \omega}} \exp(\frac{\alpha_{1} \alpha_{2} e^{-\beta \omega}}{1-e^{-\beta \omega}}) =
+		\frac{e^{-\beta \omega} }{\left(1-e^{-\beta \omega}\right)^2} 
+		$$
+
+
+		$$
+		\langle \hat{a}^{\dagger}\hat{a}\rangle = \frac{e^{-\beta \omega} }{\left(1-e^{-\beta \omega}\right)} 
+		$$
+		
+\end{problem}	
